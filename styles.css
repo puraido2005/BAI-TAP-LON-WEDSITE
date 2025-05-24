@@ -1,0 +1,119 @@
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #444;
+}
+.container {
+    background-image: url('/hình/CHẬM\ RÃI\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+select, input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+select {
+    width: 15%;
+    background: #333;
+    color: #fff;
+    border-right: 1px solid #444;
+    appearance: none;
+    cursor: pointer;
+}
+
+input {
+    width: 85%;
+    background: #fff;
+    color: #000;
+    border-radius: 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background: #f40612;
+}
+
+.social-login {
+    margin: 20px 0;
+}
+
+.social-btn {
+    width: 48%;
+    padding: 10px;
+    margin: 0 1%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-btn.fb { background: #3b5998; color: #fff; }
+.social-btn.google { background: #db4437; color: #fff; }
+.social-btn:hover { opacity: 0.9; }
+
+.or {
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.qr-code img {
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+    .social-btn {
+        width: 100%;
+        margin: 5px 0;
+        height: 40px;
+    }
+}
