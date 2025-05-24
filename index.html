@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Movie Vip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng ký tài khoản / Đăng nhập Movie Vip để thưởng thức kho Phim, Show, Thể thao, Truyền hình cáp đình đám</h2>
+        <p>Vui lòng nhập số điện thoại của bạn để tiếp tục</p>
+        <form id="registerForm">
+            <div class="input-group">
+                <select name="countryCode" id="countryCode">
+                    <option value="+84">Việt Nam (+84)</option>
+                    <option value="+1">Hoa Kỳ (+1)</option>
+                    <option value="+44">Anh (+44)</option>
+                    <option value="+81">Nhật Bản (+81)</option>
+                    <option value="+86">Trung Quốc (+86)</option>
+                </select>
+                <input type="tel" id="phone" placeholder="Số điện thoại" value="+84" required>
+            </div>
+            <button type="submit">Bắt đầu</button>
+        </form>
+        <div class="social-login">
+            <button class="social-btn fb"><i class="fab fa-facebook-f"></i> Đăng nhập bằng Facebook</button>
+            <button class="social-btn google"><i class="fab fa-google"></i> Đăng nhập bằng Google</button>
+        </div>
+        <p class="or">Hoặc bắt đầu với</p>
+        <div class="qr-code">
+            <img src="/hình/Ảnh chụp màn hình 2025-05-22 085050.png" alt="QR Code">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
