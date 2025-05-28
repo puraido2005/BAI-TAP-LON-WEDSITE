@@ -1,0 +1,140 @@
+[1mdiff --git "a/h\303\254nh test/TheWalkingDeadPoster.jpg" "b/h\303\254nh test/TheWalkingDeadPoster.jpg"[m
+[1mdeleted file mode 100644[m
+[1mindex 6447aea..0000000[m
+Binary files "a/h\303\254nh test/TheWalkingDeadPoster.jpg" and /dev/null differ
+[1mdiff --git "a/h\303\254nh test/images (1).jpg" "b/h\303\254nh test/images (1).jpg"[m
+[1mdeleted file mode 100644[m
+[1mindex 7d7480b..0000000[m
+Binary files "a/h\303\254nh test/images (1).jpg" and /dev/null differ
+[1mdiff --git "a/h\303\254nh test/images (2).jpg" "b/h\303\254nh test/images (2).jpg"[m
+[1mdeleted file mode 100644[m
+[1mindex 70b5543..0000000[m
+Binary files "a/h\303\254nh test/images (2).jpg" and /dev/null differ
+[1mdiff --git "a/h\303\254nh test/images.jpg" "b/h\303\254nh test/images.jpg"[m
+[1mdeleted file mode 100644[m
+[1mindex 09d3c5c..0000000[m
+Binary files "a/h\303\254nh test/images.jpg" and /dev/null differ
+[1mdiff --git "a/h\303\254nh/CH\341\272\254M R\303\203I (1).png" "b/h\303\254nh/CH\341\272\254M R\303\203I (1).png"[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b98955d[m
+Binary files /dev/null and "b/h\303\254nh/CH\341\272\254M R\303\203I (1).png" differ
+[1mdiff --git "a/h\303\254nh test/\341\272\242nh ch\341\273\245p m\303\240n h\303\254nh 2025-05-22 085050.png" "b/h\303\254nh/\341\272\242nh ch\341\273\245p m\303\240n h\303\254nh 2025-05-22 085050.png"[m
+[1msimilarity index 100%[m
+[1mrename from "h\303\254nh test/\341\272\242nh ch\341\273\245p m\303\240n h\303\254nh 2025-05-22 085050.png"[m
+[1mrename to "h\303\254nh/\341\272\242nh ch\341\273\245p m\303\240n h\303\254nh 2025-05-22 085050.png"[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 3b2973d..d983cc4 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -3,44 +3,33 @@[m
+ <head>[m
+     <meta charset="UTF-8">[m
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[31m-    <title>Đăng Ký Movie Vip </title>[m
+[32m+[m[32m    <title>Đăng Ký Movie Vip</title>[m
+     <link rel="stylesheet" href="styles.css">[m
+ </head>[m
+ <body>[m
+[31m-    <div class="background">[m
+[31m-        <div class="overlay"></div>[m
+[31m-        <div class="promo-images">[m
+[31m-            <img src="/hình test/images (1).jpg" alt="Promo 1">[m
+[31m-            <img src="/hình test/images (2).jpg" alt="Promo 2">[m
+[31m-            <img src="/hình test/images.jpg" alt="Promo 3">[m
+[31m-            <img src="/hình test/TheWalkingDeadPoster.jpg" alt="Promo 4">[m
+[31m-        </div>[m
+[31m-    </div>[m
+     <div class="container">[m
+[31m-        <div class="registration-box">[m
+[31m-            <h2>Đăng ký tài khoản / Đăng nhập Movie VipVip để<br>tận hưởng kho Phim, Show, Thế thao,<br>Truyền hình cáp trực tuyến</h2>[m
+[31m-            <p>Vui lòng nhập số điện thoại hoặc email để tiếp tục</p>[m
+[31m-            <div class="phone-input-container">[m
+[31m-                <select id="country-code" class="country-code">[m
+[31m-                    <option value="+84">🇻🇳 Việt Nam (+84)</option>[m
+[31m-                    <option value="+1">🇺🇸 USA (+1)</option>[m
+[31m-                    <option value="+81">🇯🇵 Japan (+81)</option>[m
+[31m-                    <option value="+44">🇬🇧 UK (+44)</option>[m
+[31m-                    <option value="+91">🇮🇳 India (+91)</option>[m
+[32m+[m[32m        <h2>Đăng ký tài khoản / Đăng nhập Movie Vip để thưởng thức kho Phim, Show, Thể thao, Truyền hình cáp đình đám</h2>[m
+[32m+[m[32m        <p>Vui lòng nhập số điện thoại của bạn để tiếp tục</p>[m
+[32m+[m[32m        <form id="registerForm">[m
+[32m+[m[32m            <div class="input-group">[m
+[32m+[m[32m                <select name="countryCode" id="countryCode">[m
+[32m+[m[32m                    <option value="+84">Việt Nam (+84)</option>[m
+[32m+[m[32m                    <option value="+1">Hoa Kỳ (+1)</option>[m
+[32m+[m[32m                    <option value="+44">Anh (+44)</option>[m
+[32m+[m[32m                    <option value="+81">Nhật Bản (+81)</option>[m
+[32m+[m[32m                    <option value="+86">Trung Quốc (+86)</option>[m
+                 </select>[m
+[31m-                <input type="text" placeholder="Số điện thoại" class="input-field" id="phone-number">[m
+[31m-            </div>[m
+[31m-            <button class="continue-btn">Tiếp tục</button>[m
+[31m-            <div class="social-login">[m
+[31m-                <button class="fb-btn">Đăng nhập bằng Facebook</button>[m
+[31m-                <button class="gg-btn">Đăng nhập bằng Google</button>[m
+[32m+[m[32m                <input type="tel" id="phone" placeholder="Số điện thoại" value="+84" required>[m
+             </div>[m
+[31m-            <div class="qr-code">[m
+[31m-                <img src="/hình test/Ảnh chụp màn hình 2025-05-22 085050.png" alt="QR Code">[m
+[31m-                <p>Quét mã QR bằng camera trên điện thoại để đăng nhập</p>[m
+[31m-                <p>Mã sẽ hết hạn sau 04:58</p>[m
+[31m-            </div>[m
+[31m-            <p class="terms">Hỗ trợ đăng nhập bằng Chứng thực</p>[m
+[32m+[m[32m            <button type="submit">Bắt đầu</button>[m
+[32m+[m[32m        </form>[m
+[32m+[m[32m        <div class="social-login">[m
+[32m+[m[32m            <button class="social-btn fb"><i class="fab fa-facebook-f"></i> Đăng nhập bằng Facebook</button>[m
+[32m+[m[32m            <button class="social-btn google"><i class="fab fa-google"></i> Đăng nhập bằng Google</button>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <p class="or">Hoặc bắt đầu với</p>[m
+[32m+[m[32m        <div class="qr-code">[m
+[32m+[m[32m            <img src="/hình/Ảnh chụp màn hình 2025-05-22 085050.png" alt="QR Code">[m
+         </div>[m
+     </div>[m
+     <script src="script.js"></script>[m
+[1mdiff --git a/script.js b/script.js[m
+[1mdeleted file mode 100644[m
+[1mindex 84a4b75..0000000[m
+[1m--- a/script.js[m
+[1m+++ /dev/null[m
+[36m@@ -1,63 +0,0 @@[m
+[31m-document.addEventListener('DOMContentLoaded', function () {[m
+[31m-    // Elements[m
+[31m-    const phoneInput = document.getElementById('phone-number');[m
+[31m-    const countryCodeSelect = document.getElementById('country-code');[m
+[31m-    const continueBtn = document.querySelector('.continue-btn');[m
+[31m-    const fbBtn = document.querySelector('.fb-btn');[m
+[31m-    const ggBtn = document.querySelector('.gg-btn');[m
+[31m-    const qrTimer = document.querySelector('.qr-code p:last-child');[m
+[31m-[m
+[31m-    // Phone/Email Validation[m
+[31m-    function validateInput(input) {[m
+[31m-        const phoneRegex = /^\d{9,12}$/;[m
+[31m-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;[m
+[31m-        return phoneRegex.test(input) || emailRegex.test(input);[m
+[31m-    }[m
+[31m-[m
+[31m-    // Handle Continue Button Click[m
+[31m-    continueBtn.addEventListener('click', function () {[m
+[31m-        const inputValue = phoneInput.value.trim();[m
+[31m-        const countryCode = countryCodeSelect.value;[m
+[31m-[m
+[31m-        if (!inputValue) {[m
+[31m-            alert('Vui lòng nhập số điện thoại hoặc email.');[m
+[31m-            return;[m
+[31m-        }[m
+[31m-[m
+[31m-        if (!validateInput(inputValue)) {[m
+[31m-            alert('Số điện thoại hoặc email không hợp lệ.');[m
+[31m-            return;[m
+[31m-        }[m
+[31m-[m
+[31m-        // Simulate form submission[m
+[31m-        console.log(`Submitting: ${countryCode}${inputValue}`);[m
+[31m-        alert('Tiếp tục với ' + countryCode + inputValue);[m
+[31m-        // Add actual form submission logic here (e.g., API call)[m
+[31m-    });[m
+[31m-[m
+[31m-    // Social Login Handlers[m
+[31m-    fbBtn.addEventListener('click', function () {[m
+[31m-        alert('Đăng nhập bằng Facebook - Chức năng này cần tích hợp Facebook S
