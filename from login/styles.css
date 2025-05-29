@@ -15,19 +15,23 @@ body {
     z-index: -1;
 }
 
-.overlay {
-    position: absolute;
+.background {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    background-image: url('hình test/Thiết kế chưa có tên.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .promo-images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center ;
+    justify-content: left ;
     padding: 20px;
 }
 
@@ -40,8 +44,8 @@ body {
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
     height: 100vh;
     position: relative;
 }
@@ -91,7 +95,7 @@ body {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-image: color white ;
     background-repeat: no-repeat;
     background-position: right 10px center;
 }
