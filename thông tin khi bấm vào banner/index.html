@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang xem phim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Danh sách phim</h1>
+<div class="movie-grid">
+  <div class="movie-item" onclick="showPopup('Thám tử kiên', 'Thám Tử Kiên là một nhân vật được yêu thích trong tác phẩm điện của ăn khách của NGƯỜI VỢ CUỐI CÙNG của Victor Vũ, Thám Tử Kiên: Kỳ Không Đầu sẽ là một phim Victor Vũ trở về với thể loại sở trường Kinh Dị - Trinh Thám sau những tác phẩm tình cảm lãng mạn trước đó..')">
+    <img src="/thông tin khi bấm vào banner/hình/thamtukiePOSTER.jpg" alt="Phim 1">
+    <div class="movie-title">Thám tử kiên </div>
+  </div>
+  <div class="movie-item" onclick="showPopup('MƯỢN HỒN ĐOẠT XÁC', 'Cô phát hiện ra thân thế thật sự và âm mưu đằng sau hoàng cung.')">
+    <img src="/thông tin khi bấm vào banner/hình/muonhondoatxacPoster.jpg" alt="Phim 2">
+    <div class="movie-title">MƯỢN HỒN ĐOẠT XÁC</div>
+  </div>
+</div>
+
+<!-- ✅ Video nổi bật -->
+<h2>Video nổi bật</h2>
+<div class="movie-grid">
+  <div class="movie-item" onclick="showPopup('LẬT MẶT 8: VÒNG TAY NẮNG', 'LẬT MẶT 8: VÒNG TAY NẮNG là một bộ phim về sự khác biệt quan điểm giữa ba thế hệ ông bà cha mẹ con cháu. .')">
+    <img src="/thông tin khi bấm vào banner/hình/lm8Poster(1).jpg" alt="Video nổi bật 1">
+    <div class="movie-title">LẬT MẶT 8: VÒNG TAY NẮNG</div>
+  </div>
+</div>
+
+<!-- ✅ Đề xuất cho bạn -->
+<h2>Đề xuất cho bạn</h2>
+<div class="movie-grid">
+  <div class="movie-item" onclick="showPopup('ONODA - 10.000 ĐÊM TRONG RỪNG', 'Nhật Bản, năm 1944. Được đào tạo để làm công việc tình báo, Hiroo Onoda, 22 tuổi, phát hiện ra một triết lý trái ngược với đường lối chính thống: không tự sát, sống sót dù có chuyện gì xảy ra, nhiệm vụ quan trọng hơn bất cứ điều gì khác.')">
+    <img src="/thông tin khi bấm vào banner/hình/onodaPOSTER.jpg" alt="Recalled">
+    <div class="movie-title">ONODA - 10.000 ĐÊM TRONG RỪNG</div>
+  </div>
+  <div class="movie-item" onclick="showPopup('LỒNG TIẾNG - PHIM ĐIỆN ẢNH DORAEMON: NOBITA VÀ CUỘC PHIÊU LƯU VÀO THẾ GIỚI TRONG TRANH', 'Thông qua món bảo bối mới của Doraemon, cả nhóm bạn bước thế giới trong một bức tranh nổi tiếng và bắt gặp cô bạn bí ẩn tên Claire.')">
+    <img src="/thông tin khi bấm vào banner/hình/doraemon2025Poster.jpg" alt="Happy Chapter">
+    <div class="movie-title">LỒNG TIẾNG - PHIM ĐIỆN ẢNH DORAEMON: NOBITA VÀ CUỘC PHIÊU LƯU VÀO THẾ GIỚI TRONG TRANH</div>
+  </div>
+  <div class="movie-item" onclick="showPopup('NHIỆM VỤ: BẤT KHẢ THI - NGHIỆP BÁO CUỐI CÙNG', 'Cuộc đời là tất thảy những lựa chọn. Tom Cruise thủ vai Ethan Hunt trở lại trong Nhiệm Vụ: Bất Khả Thi – Nghiệp Báo Cuối Cùng..')">
+    <img src="/thông tin khi bấm vào banner/hình/mi2025Poster.jpg" alt="Rì âm">
+    <div class="movie-title">NHIỆM VỤ: BẤT KHẢ THI - NGHIỆP BÁO CUỐI CÙNG</div>
+  </div>
+</div>
+
+<!-- Popup -->
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="popup">
+  <h2 id="popupTitle">Tên phim</h2>
+  <p id="popupDescription">Mô tả phim chi tiết...</p>
+  <button onclick="closePopup()">Đóng</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
