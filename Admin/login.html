@@ -1,62 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Login</title>
-  <link rel="stylesheet" href="login.css">
-</head>
-<body>
-  <div class="logo">
-    <div class="circles">
-      <div class="circle red" id="circle1"></div>
-      <div class="circle green" id="circle2"></div>
-      <div class="circle blue" id="circle3"></div>
-      <div class="circle yellow" id="circle4"></div>
-    </div>
-    <div class="logo-text">COMPANY LOGO</div>
-  </div>
-  <div class="container">
-    <div class="left-section">
-      <svg class="illustration" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#74b9ff;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#55efc4;stop-opacity:1" />
-          </linearGradient>
-        </defs>
-        <rect x="40" y="20" width="120" height="80" fill="url(#glow)" rx="10" />
-        <rect x="40" y="100" width="120" height="30" fill="#2d3436" rx="5" />
-        <circle cx="100" cy="60" r="25" fill="#ff7675" filter="url(#glow-effect)" />
-        <circle cx="100" cy="60" r="15" fill="#fab1a0" />
-        <path d="M40 20 Q100 0 160 20" stroke="#5a4bc6" stroke-width="3" fill="none" stroke-dasharray="8,8" />
-        <circle cx="150" cy="80" r="35" fill="#5a4bc6" opacity="0.7" />
-        <circle cx="140" cy="70" r="6" fill="white" />
-        <circle cx="160" cy="70" r="6" fill="white" />
-        <filter id="glow-effect">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
-          <feMerge>
-            <feMergeNode />
-            <feMergeNode in="SourceGraphic" />
-          </feMerge>
-        </filter>
-      </svg>
-    </div>
-    <div class="right-section">
-      <h2 class="title">Login as Admin User</h2>
-      <div class="input-group">
-        <input type="email" id="email" placeholder=" " required>
-        <label for="email">Email</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <div class="circles">
+        <div class="circle red" id="circle1"></div>
+        <div class="circle green" id="circle2"></div>
+        <div class="circle blue" id="circle3"></div>
+        <div class="circle yellow" id="circle4"></div>
       </div>
-      <div class="input-group">
-        <input type="password" id="password" placeholder=" " required>
-        <label for="password">Password</label>
-      </div>
-      <button class="login-btn" onclick="handleLogin()">LOGIN</button>
-      <div class="forgot-password"><a href="#">Forget your password? Get help signed in.</a></div>
-      <div class="terms"><a href="#">Terms of use.</a> <a href="#">Privacy policy</a></div>
+      <div class="logo-text">COMPANY LOGO</div>
     </div>
-  </div>
-  <script src="login.js"></script>
-</body>
+    <div class="container">
+      <div class="left-section">
+        <svg
+          class="illustration"
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color: #74b9ff; stop-opacity: 1" />
+              <stop
+                offset="100%"
+                style="stop-color: #55efc4; stop-opacity: 1"
+              />
+            </linearGradient>
+          </defs>
+          <rect
+            x="40"
+            y="20"
+            width="120"
+            height="80"
+            fill="url(#glow)"
+            rx="10"
+          />
+          <rect x="40" y="100" width="120" height="30" fill="#2d3436" rx="5" />
+          <circle
+            cx="100"
+            cy="60"
+            r="25"
+            fill="#ff7675"
+            filter="url(#glow-effect)"
+          />
+          <circle cx="100" cy="60" r="15" fill="#fab1a0" />
+          <path
+            d="M40 20 Q100 0 160 20"
+            stroke="#5a4bc6"
+            stroke-width="3"
+            fill="none"
+            stroke-dasharray="8,8"
+          />
+          <circle cx="150" cy="80" r="35" fill="#5a4bc6" opacity="0.7" />
+          <circle cx="140" cy="70" r="6" fill="white" />
+          <circle cx="160" cy="70" r="6" fill="white" />
+          <filter id="glow-effect">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+            <feMerge>
+              <feMergeNode />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </svg>
+      </div>
+      <div class="right-section">
+        <h2 class="title">Login as Admin User</h2>
+        <div class="input-group">
+          <input type="email" id="email" placeholder=" " required />
+          <label for="email">Email</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" placeholder=" " required />
+          <label for="password">Password</label>
+        </div>
+        <button class="login-btn" onclick="handleLogin()">LOGIN</button>
+        <div class="forgot-password">
+          <a href="#">Forget your password? Get help signed in.</a>
+        </div>
+        <div class="terms">
+          <a href="#">Terms of use.</a> <a href="#">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
 </html>
