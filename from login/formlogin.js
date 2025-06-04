@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // QR Code Timer
-    let timeLeft = 4 * 60 + 58; // 04:58 in seconds
+    let timeLeft = 1 * 60 + 58; // 04:58 in seconds
     function updateTimer() {
         if (timeLeft <= 0) {
             qrTimer.textContent = 'Mã đã hết hạn';

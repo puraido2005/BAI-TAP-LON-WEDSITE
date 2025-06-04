@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký Movie Vip</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="overlay"></div>
+      <div class="promo-images">
+        <img src="/hình test/images (1).jpg" alt="Promo 1" />
+        <img src="/hình test/images (2).jpg" alt="Promo 2" />
+        <img src="/hình test/images.jpg" alt="Promo 3" />
+        <img src="/hình test/TheWalkingDeadPoster.jpg" alt="Promo 4" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="registration-box">
+        <h2>
+          Đăng ký tài khoản / Đăng nhập Movie Vip để<br />tận hưởng kho Phim,
+          Show, Thế thao,<br />Truyền hình cáp trực tuyến
+        </h2>
+        <p>Vui lòng nhập số điện thoại hoặc email để tiếp tục</p>
+        <div class="phone-input-container">
+          <select id="country-code" class="country-code">
+            <option value="+84">🇻🇳 Việt Nam (+84)</option>
+            <option value="+1">🇺🇸 USA (+1)</option>
+            <option value="+81">🇯🇵 Japan (+81)</option>
+            <option value="+44">🇬🇧 UK (+44)</option>
+            <option value="+91">🇮🇳 India (+91)</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Số điện thoại"
+            class="input-field"
+            id="phone-number"
+          />
+        </div>
+        <button class="continue-btn">Tiếp tục</button>
+        <div class="social-login">
+          <button class="fb-btn">Đăng nhập bằng Facebook</button>
+          <button class="gg-btn">Đăng nhập bằng Google</button>
+        </div>
+        <div class="qr-code">
+          <img
+            src="/hình test/Ảnh chụp màn hình 2025-05-22 085050.png"
+            alt="QR Code"
+          />
+          <p>Quét mã QR bằng camera trên điện thoại để đăng nhập</p>
+          <p>Mã sẽ hết hạn sau 04:58</p>
+        </div>
+        <p class="terms">Hỗ trợ đăng nhập bằng Chứng thực</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

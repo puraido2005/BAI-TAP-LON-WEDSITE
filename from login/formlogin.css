@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("hình test/Thiết kế chưa có tên.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.promo-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 20px;
+}
+
+.promo-images img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  opacity: 0.7;
+}
+
+.container {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  height: 100vh;
+  position: relative;
+}
+
+.registration-box {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.registration-box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.registration-box p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.phone-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 260px;
+  height: 40px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.country-code {
+  width: 120px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  height: 100%;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: color white;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.input-field {
+  width: 140px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background: #333;
+  color: #fff;
+  font-size: 16px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.continue-btn {
+  width: 260px;
+  height: 40px;
+  padding: 0 10px;
+  background: #e50914;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.social-login button {
+  width: 260px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.fb-btn {
+  background: #3b5998;
+}
+
+.gg-btn {
+  background: #db4437;
+}
+
+.qr-code {
+  margin-top: 20px;
+}
+
+.qr-code img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.qr-code p {
+  font-size: 12px;
+  color: #ccc;
+  margin: 5px 0;
+}
+
+.terms {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 20px;
+}
