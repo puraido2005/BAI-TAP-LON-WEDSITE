@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('hình test/Thiết kế chưa có tên.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.promo-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center images for balance */
+    padding: 30px; /* Increased padding */
+    gap: 20px; /* Increased spacing */
+}
+
+.promo-images img {
+    width: 320px; /* Larger images */
+    height: 200px;
+    margin: 0;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.promo-images img:hover {
+    opacity: 1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height :100%
+    position: relative;
+    padding: 30px; /* Increased padding for smaller screens */
+}
+
+.registration-box {
+    background: #1a1a1a;
+    padding: 100px; /* Larger padding */
+    border-radius: 14px; /* Slightly larger corners */
+    text-align: center;
+    width: 1000px; /* Larger width */
+    max-width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+}
+
+.registration-box h2 {
+    font-size: 24px; /* Larger heading */
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.registration-box p {
+    font-size: 16px; /* Larger text */
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.phone-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px; /* Taller input */
+    box-sizing: border-box;
+}
+
+.country-code {
+    width: 120px; /* Slightly wider */
+    padding: 0 15px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    background: #333;
+    color: #fff;
+    font-size: 16px; /* Larger font */
+    height: 100%;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #333 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>') no-repeat right 12px center;
+}
+
+.input-field {
+    flex: 1;
+    padding: 0 15px;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background: #333;
+    color: #fff;
+    font-size: 18px; /* Larger font */
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.continue-btn {
+    width: 100%;
+    height: 50px; /* Taller button */
+    padding: 0;
+    background: #e50914;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px; /* Larger font */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    line-height: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.continue-btn:hover {
+    background: #f40612;
+}
+
+.social-login button {
+    width: 100%;
+    padding: 14px; /* Increased padding */
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px; /* Larger font */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.social-login button:hover {
+    opacity: 0.9;
+}
+
+.fb-btn {
+    background: #3b5998;
+}
+
+.gg-btn {
+    background: #db4437;
+}
+
+.qr-code {
+    margin-top: 30px;
+}
+
+.qr-code img {
+    width: 120px; /* Larger QR code */
+    height: 120px;
+    margin-bottom: 12px;
+}
+
+.qr-code p {
+    font-size: 14px; /* Larger text */
+    color: #ccc;
+    margin: 6px 0;
+}
+
+.terms {
+    font-size: 14px; /* Larger text */
+    color: #ccc;
+    margin-top: 25px;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .registration-box {
+        width: 90%;
+        padding: 30px; /* Slightly reduced padding */
+    }
+
+    .promo-images {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .promo-images img {
+        width: 100%;
+        max-width: 280px; /* Slightly smaller for smaller screens */
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .registration-box {
+        padding: 20px;
+    }
+
+    .registration-box h2 {
+        font-size: 20px;
+    }
+
+    .phone-input-container {
+        height: 44px;
+    }
+
+    .country-code {
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .input-field {
+        font-size: 16px;
+    }
+
+    .continue-btn,
+    .social-login button {
+        height: 44px;
+        line-height: 44px;
+        font-size: 16px;
+    }
+
+    .qr-code img {
+        width: 100px;
+        height: 100px;
+    }
+}
