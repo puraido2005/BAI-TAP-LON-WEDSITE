@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 2vw; /* Use vw for responsive padding */
+}
+
+.frame {
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #222;
+    width: 90vw; /* Use viewport width instead of fixed 800px */
+    max-width: 800px; /* Maintain a max-width for larger screens */
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    padding: 2vw; /* Responsive padding */
+}
+
+.video-overlay {
+    position: relative;
+    width: 100%;
+    height: 50vw; /* Responsive height based on viewport width */
+    max-height: 450px; /* Cap height for larger screens */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw; /* Responsive font size */
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.rating-overlay {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    background-color: #00cc00;
+    padding: 0.5vw 1vw;
+    border-radius: 5px;
+    font-size: 1.2rem; /* Use rem for scalability */
+}
+
+.buttons {
+    position: absolute;
+    bottom: 2vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1vw;
+}
+
+.play-btn, .add-btn {
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.4rem; /* Responsive font size */
+    display: flex;
+    align-items: center; /* Center icons/text if icons are used */
+}
+
+.play-btn {
+    background-color: #fff;
+    color: #000;
+}
+
+.add-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Assuming icons are used (e.g., Font Awesome) */
+.play-btn i, .add-btn i {
+    font-size: 1.4rem; /* Match button text size */
+    margin-right: 0.5rem; /* Space between icon and text */
+}
+
+.details {
+    margin-top: 2vw;
+    padding: 2vw;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+}
+
+.stats {
+    display: flex;
+    gap: 1.5vw;
+    margin-bottom: 1vw;
+    font-size: 1.2rem; /* Responsive font size */
+    color: #ccc;
+}
+
+.description, .cast, .director, .genre {
+    margin: 1vw 0;
+    font-size: 1.2rem; /* Responsive font size */
+}
+
+.interactions {
+    display: flex;
+    gap: 1.5vw;
+    margin-top: 1vw;
+    font-size: 1.2rem; /* Responsive font size */
+    color: #ccc;
+}
+
+.interactions span {
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Align icons with text */
+}
+
+/* Responsive icons in interactions */
+.interactions i {
+    font-size: 1.2rem; /* Match text size */
+    margin-right: 0.5rem; /* Space between icon and text */
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 600px) {
+    .overlay-text {
+        font-size: 6vw; /* Larger font for smaller screens */
+    }
+
+    .rating-overlay {
+        font-size: 1rem;
+        padding: 0.8vw 1.2vw;
+    }
+
+    .play-btn, .add-btn {
+        padding: 1.5vw 3vw;
+        font-size: 1.2rem;
+    }
+
+    .play-btn i, .add-btn i {
+        font-size: 1.2rem;
+    }
+
+    .video-overlay {
+        height: 60vw; /* Adjust height for smaller screens */
+    }
+
+    .stats, .description, .cast, .director, .genre, .interactions {
+        font-size: 1rem; /* Smaller font for mobile */
+    }
+
+    .interactions i {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .overlay-text {
+        font-size: 8vw; /* Even larger for very small screens */
+    }
+
+    .rating-overlay {
+        font-size: 0.9rem;
+    }
+
+    .play-btn, .add-btn {
+        padding: 2vw 4vw;
+        font-size: 1rem;
+    }
+
+    .play-btn i, .add-btn i {
+        font-size: 1rem;
+    }
+}
