@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký Movie Vip</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="registration-box">
+        <h2>
+          Đăng ký tài khoản / Đăng nhập Movie Vip để<br />tận hưởng kho Phim,
+          Show, Thể thao,<br />Truyền hình cáp trực tuyến
+        </h2>
+        <p>Vui lòng nhập email để tiếp tục</p>
+
+        <!-- BẮT ĐẦU FORM -->
+        <form action="check_email.php" method="post">
+          <div class="phone-input-container">
+            <input
+              type="text"
+              placeholder="Email"
+              class="input-field"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <button type="submit" class="continue-btn">Tiếp tục</button>
+        </form>
+        <!-- KẾT THÚC FORM -->
+
+        <div class="social-login">
+          <!-- <button class="fb-btn">Đăng nhập bằng Facebook</button> -->
+          <!-- <button class="gg-btn">Đăng nhập bằng Google</button> -->
+        </div>
+        <div class="qr-code">
+          <img
+            src="/hình test/Ảnh chụp màn hình 2025-05-22 085050.png"
+            alt="QR Code"
+          />
+          <p>Quét mã QR bằng camera trên điện thoại để đăng nhập</p>
+          <p>Mã sẽ hết hạn sau 04:58</p>
+        </div>
+        <p class="terms">Hỗ trợ đăng nhập bằng Chứng thực</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
