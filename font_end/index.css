@@ -1,9 +1,8 @@
-/* Giao diện tổng thể*/
+/* Giao diện tổng thể */
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
 }
-
 
 /* Đặt kiểu Header */
 header {
@@ -29,7 +28,7 @@ header {
 
 /* Menu chính */
 nav {
-     margin-left: 80px; 
+    margin-left: 80px; 
     flex: 1;
 }
 .Menu {
@@ -39,7 +38,7 @@ nav {
     display: flex;
     gap: 30px
 }
-.Menu li{
+.Menu li {
     display: inline;
 }
 .Menu a {
@@ -50,8 +49,9 @@ nav {
     font-weight: bold;
 }
 .Menu a:hover {
-    color:rgb(79, 238, 79);
+    color: rgb(79, 238, 79);
 }
+
 /* Nút Đăng ký Movie VIP */
 .Đăng-kí-Vip {
     margin-left: 40px;
@@ -60,7 +60,7 @@ nav {
 .Đăng-kí-Vip a {
     display: inline-block;
     padding: 8px 18px;
-    background-color: #ff4b2b; /* màu đỏ cam nổi bật */
+    background-color: #ff4b2b;
     color: white;
     font-weight: bold;
     font-size: 15px;
@@ -69,10 +69,11 @@ nav {
     transition: background-color 0.3s ease;
 }
 .Đăng-kí-Vip a:hover {
-    background-color: rgb(79, 238, 79); /* màu đậm hơn khi hover */
+    background-color: rgb(79, 238, 79);
     color: #fff;
     cursor: pointer;
 }
+
 /* Bao bọc toàn bộ phần tìm kiếm */
 .search-wrapper {
     display: flex;
@@ -84,12 +85,9 @@ nav {
     transition: all 0.3s ease;
     gap: 0px;
 }
-/* Ẩn checkbox điều khiển */
 #toggle-search {
     display: none;
 }
-
-/* Biểu tượng kính lúp */
 .search-icon {
     color: rgb(19, 27, 72);
     font-size: 18px;
@@ -97,12 +95,10 @@ nav {
     margin-right: 0px;
     margin-left: 0px;
 }
-
-/* Ô tìm kiếm ban đầu ẩn */
 .search-box {
     display: none;
     margin-left: 4px;
-    padding: 4px 10px;
+    padding: 3px 10px;
     font-size: 16px;
     border: none;
     border-radius: 30px;
@@ -110,12 +106,11 @@ nav {
     transition: width 0.3s ease, opacity 0.3s ease;
     width: 200px;
 }
-
-/* Khi checkbox được check thì hiện ô input */
 #toggle-search:checked ~ .search-box {
     display: inline-block;
 }
 
+/* User login */
 .user-login {
     position: relative;
     margin-left: 8px;
@@ -123,12 +118,9 @@ nav {
     display: flex;
     align-items: center;
 }
-
-/* Ẩn checkbox */
 .user-login input[type="checkbox"] {
     display: none;
 }
-
 .user-icon {
     color: white;
     font-size: 28px;
@@ -138,12 +130,9 @@ nav {
     align-items: center;
     transition: color 0.3s ease;
 }
-
 .user-icon:hover {
     color: rgb(79, 238, 79);
 }
-
-/* Dropdown mặc định ẩn */
 .user-dropdown {
     display: none;
     position: absolute;
@@ -156,7 +145,6 @@ nav {
     flex-direction: column;
     z-index: 1000;
 }
-
 .user-dropdown a {
     color: white;
     padding: 10px 15px;
@@ -165,89 +153,165 @@ nav {
     border-bottom: 1px solid rgba(255,255,255,0.1);
     transition: background-color 0.2s ease;
 }
-
 .user-dropdown a:last-child {
     border-bottom: none;
 }
-
 .user-dropdown a:hover {
     background-color: rgb(79, 238, 79);
     color: rgb(14, 26, 58);
 }
-
-/* Hiện dropdown khi checkbox được check */
 #toggle-user:checked ~ .user-dropdown {
     display: flex;
 }
+
+/* Video Slideshow Banner */
 .video-banner {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
-
-.video-banner video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  z-index: 0;
-  filter: brightness(60%);
+.video-slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-
+.video-slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(60%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.video-slide.active {
+    opacity: 1;
+}
 .video-overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+    z-index: 1;
+}
+/* Video Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
 }
 
-.banner-content {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  text-align: center;
-  padding: 0 20px;
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.banner-content h1 {
-  font-size: 60px;
-  font-weight: 900;
-  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8);
-  margin-bottom: 20px;
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
 }
 
-.banner-content p {
-  font-size: 22px;
-  max-width: 700px;
-  margin: 0 auto 30px;
-  line-height: 1.6;
-  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.7);
+.slide.active {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
 }
 
-.banner-button {
-  display: inline-block;
-  padding: 12px 30px;
-  background: #ff3c3c;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 30px;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: background 0.3s ease, transform 0.2s ease;
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.banner-button:hover {
-  background: #10e68b;
-  color: #141e30;
-  transform: scale(1.05);
+.slide-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0));
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #fff;
+    max-width: 600px;
+}
+
+.slide-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.slide-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    background: #ff4500;
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #e03e00;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.nav-buttons {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.nav-button {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    opacity: 0.5;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-button.active {
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }

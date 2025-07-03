@@ -49,16 +49,81 @@
 </div>
 
     </header>
-<div class="video-banner">
-  <video autoplay muted loop>
-    <source src="videoplayback.mp4" type="video/mp4">
-  </video>
-  <div class="video-overlay"></div>
-  <div class="banner-content">
-    <h1>Hành Trình Vô Tận</h1>
-    <p>Đắm chìm trong thế giới điện ảnh đỉnh cao cùng MovieVip</p>
-    <a href="#watch" class="banner-button">▶ Xem Ngay</a>
-  </div>
+<div class="banner">
+    <div class="slides">
+        <div class="slide active">
+            <img src="sddefault.jpg" alt="Đấu Phá Thương Khung">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h1>Đấu Phá Thương Khung</h1>
+                <p>Khám phá thế giới thần bí đầy rẫy hiểm nguy và sức mạnh!</p>
+                <a href="https://fptplay.vn" class="cta-button" target="_blank">▶ Xem Ngay</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="hành động.jpeg" alt="Slide 2">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h1>Bom Tấn Hành Động</h1>
+                <p>Thưởng thức những pha hành động nghẹt thở!</p>
+                <a href="https://fptplay.vn" class="cta-button" target="_blank">▶ Xem Ngay</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="horimya.jpg" alt="Slide 3">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h1>Thế Giới Anime</h1>
+                <p>Hành trình đầy màu sắc và cảm xúc!</p>
+                <a href="https://fptplay.vn" class="cta-button" target="_blank">▶ Xem Ngay</a>
+            </div>
+        </div>
+    </div>
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+    <div class="nav-buttons">
+        <div class="nav-button active"></div>
+        <div class="nav-button"></div>
+        <div class="nav-button"></div>
+    </div>
 </div>
-</body>
-</html>
+<script>
+    const slides = document.querySelectorAll('.slide');
+    const navButtons = document.querySelectorAll('.nav-button');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    let current = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            navButtons[i].classList.remove('active');
+            if (i === index) {
+                slide.classList.add('active');
+                navButtons[i].classList.add('active');
+            }
+        });
+        current = index;
+    }
+
+    function nextSlide() {
+        let newIndex = (current + 1) % slides.length;
+        showSlide(newIndex);
+    }
+
+    function prevSlide() {
+        let newIndex = (current - 1 + slides.length) % slides.length;
+        showSlide(newIndex);
+    }
+
+    next.addEventListener('click', nextSlide);
+    prev.addEventListener('click', prevSlide);
+
+    navButtons.forEach((btn, i) => {
+        btn.addEventListener('click', () => showSlide(i));
+    });
+
+    // Auto play
+    setInterval(nextSlide, 5000); // 5 giây chuyển slide
+</script>
+
